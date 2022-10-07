@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C0220C2-0BC8-4567-8CCE-785FB5436A52}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FormUI_Test</RootNamespace>
+    <AssemblyName>FormUI_Test</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChimpTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChimpTest.Designer.cs">
+      <DependentUpon>ChimpTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flick.Designer.cs">
+      <DependentUpon>Flick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leaderboard.Designer.cs">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nevek.cs" />
+    <Compile Include="NumberMemory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberMemory.Designer.cs">
+      <DependentUpon>NumberMemory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Precision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Precision.Designer.cs">
+      <DependentUpon>Precision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reaction.Designer.cs">
+      <DependentUpon>Reaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sequence.Designer.cs">
+      <DependentUpon>Sequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sorting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sorting.Designer.cs">
+      <DependentUpon>Sorting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Speed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Speed.Designer.cs">
+      <DependentUpon>Speed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reg.Designer.cs">
+      <DependentUpon>Reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Scores.cs" />
+    <EmbeddedResource Include="ChimpTest.resx">
+      <DependentUpon>ChimpTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flick.resx">
+      <DependentUpon>Flick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leaderboard.resx">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberMemory.resx">
+      <DependentUpon>NumberMemory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Precision.resx">
+      <DependentUpon>Precision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reaction.resx">
+      <DependentUpon>Reaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence.resx">
+      <DependentUpon>Sequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sorting.resx">
+      <DependentUpon>Sorting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Speed.resx">
+      <DependentUpon>Speed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reg.resx">
+      <DependentUpon>Reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\race-car-icon-png-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Precision.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopwatchIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sequence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numberMemory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sorting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22547e182af18101062c4644984f69eb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
